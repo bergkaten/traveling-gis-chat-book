@@ -30,7 +30,7 @@
 
 <p><b>The Founders:</b> <a href="https://twitter.com/gregcocks_kiwi">Greg Cocks</a> is the champion that bought and shared the book. <a href="https://twitter.com/pokateo_">Kate Berg</a> was inspired by a <a href=https://twitter.com/gregcocks_kiwi/status/1611115550993780738?s=20&t=1DrdkXrJ6XGYPxNEFlWxtw">Twitter thread</a> to formally set up the Fellowship.</p>
 
-<p>Want to join in? Apply to participate by filling out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_rLbQl5TXbscGTX_6hvDIaciEi0-8X0vndsdWLGZytATRNg">application form</a>.</p>
+<p>Want to join in? Apply to participate by filling out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_rLbQl5TXbscGTX_6hvDIaciEi0-8X0vndsdWLGZytATRNg/viewform">application form</a>.</p>
 
 <p>This web map shows the journey of the Traveling GIS Chat Book.</p>
 
@@ -56,8 +56,8 @@
 
     //add an empty map called "bookmap" to the page in the mapid div
     var bookmap = L.map('mapid', {
-        center: [38.538592, -100.75],
-        zoom: 1
+        center: [38.0, -98.5],
+        zoom: 4
         });
 
     //add the base map = Stamen Toner tile layer
@@ -85,7 +85,7 @@
 	
 	var arrow_line = L.polyline(book_coords, {
 		"color": "orange",
-		"weight": 5,
+		"weight": 4,
 		"opacity": .5
 		}).addTo(bookmap);
 	
@@ -94,7 +94,7 @@
 			{
 				offset: '50%',
 				repeat: 0,
-				symbol: L.Symbol.arrowHead({pixelSize: 8, polygon: false, pathOptions: {
+				symbol: L.Symbol.arrowHead({pixelSize: 7, polygon: false, pathOptions: {
 					"color": "orange",
 					"weight": 5,
 					"opacity": 1, 
